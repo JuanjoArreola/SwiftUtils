@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     func range(from range: NSRange) -> Range<String.Index>? {
         guard let start = index(startIndex, offsetBy: range.location, limitedBy: endIndex),
             let end = index(start, offsetBy: range.length, limitedBy: endIndex) else { return nil }

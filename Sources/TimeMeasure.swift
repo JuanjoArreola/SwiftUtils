@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TimeMeasure {
+public class TimeMeasure {
     let startTime: CFAbsoluteTime
     var endTime: CFAbsoluteTime?
     

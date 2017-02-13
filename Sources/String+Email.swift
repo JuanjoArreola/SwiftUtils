@@ -10,7 +10,7 @@ import Foundation
 
 let emailRegex = try! NSRegularExpression(pattern: "\\A.+@.+\\.[A-Za-z0-9]{2,}\\Z", options: [])
 
-extension String {
+public extension String {
     var isPossibleEmail: Bool {
         return emailRegex.numberOfMatches(in: self, options: [], range: NSMakeRange(0, self.characters.count)) > 0
     }

@@ -28,7 +28,7 @@ public extension Array where Element: Equatable {
         return nil
     }
     
-    mutating func removeAllOccurrencesOfElement(_ element: Element) -> Int {
+    mutating func removeAllOccurrences(of element: Element) -> Int {
         var occurrences = 0
         while true {
             if let index = index(of: element) {

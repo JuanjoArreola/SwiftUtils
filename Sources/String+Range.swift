@@ -14,4 +14,9 @@ public extension String {
             let end = index(start, offsetBy: range.length, limitedBy: endIndex) else { return nil }
         return start..<end
     }
+    
+    func nsRange(from range: Range<String.Index>) -> NSRange {
+        return NSRange.init(location: distance(from: startIndex, to: range.lowerBound),
+                            length: distance(from: range.lowerBound, to: range.upperBound))
+    }
 }

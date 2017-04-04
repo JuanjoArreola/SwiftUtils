@@ -25,7 +25,6 @@
 		811D22351E4CDAD400DEC16A /* TimeMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22201E4CDAD400DEC16A /* TimeMeasure.swift */; };
 		811D22361E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22211E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift */; };
 		811D22371E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22221E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift */; };
-		811D22381E4CDAD400DEC16A /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22231E4CDAD400DEC16A /* UIViewController+ActivityIndicator.swift */; };
 		811D22391E4CDAD400DEC16A /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */; };
 		811D223A1E4CDAD400DEC16A /* UIViewController+BarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */; };
 		817E74751E4A46D3008A088D /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 817E74731E4A46D3008A088D /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,7 +49,6 @@
 		811D22201E4CDAD400DEC16A /* TimeMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeMeasure.swift; path = Sources/TimeMeasure.swift; sourceTree = SOURCE_ROOT; };
 		811D22211E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+HideSeparator.swift"; path = "Sources/UITableViewCell+HideSeparator.swift"; sourceTree = SOURCE_ROOT; };
 		811D22221E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewController+SectionHeight.swift"; path = "Sources/UITableViewController+SectionHeight.swift"; sourceTree = SOURCE_ROOT; };
-		811D22231E4CDAD400DEC16A /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+ActivityIndicator.swift"; path = "Sources/UIViewController+ActivityIndicator.swift"; sourceTree = SOURCE_ROOT; };
 		811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alert.swift"; path = "Sources/UIViewController+Alert.swift"; sourceTree = SOURCE_ROOT; };
 		811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+BarHeight.swift"; path = "Sources/UIViewController+BarHeight.swift"; sourceTree = SOURCE_ROOT; };
 		817E74701E4A46D3008A088D /* SwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 				811D22201E4CDAD400DEC16A /* TimeMeasure.swift */,
 				811D22211E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift */,
 				811D22221E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift */,
-				811D22231E4CDAD400DEC16A /* UIViewController+ActivityIndicator.swift */,
 				811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */,
 				811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */,
 			);
@@ -216,7 +213,6 @@
 				811D22351E4CDAD400DEC16A /* TimeMeasure.swift in Sources */,
 				811D222A1E4CDAD400DEC16A /* dispatch_after+Util.swift in Sources */,
 				811D222E1E4CDAD400DEC16A /* LocationManager.swift in Sources */,
-				811D22381E4CDAD400DEC16A /* UIViewController+ActivityIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

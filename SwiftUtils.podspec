@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftUtils"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A collection of utilities for iOS projects"
 
   s.homepage     = "https://github.com/JuanjoArreola/SwiftUtils"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Juanjo Arreola" => "juanjo.arreola@gmail.com" }
   
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "git@github.com:JuanjoArreola/SwiftUtils.git", :tag => "{s.version}" }
   s.source_files  = "Sources/**/*.swift"

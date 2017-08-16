@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftUtils"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "A collection of utilities for iOS projects"
 
   s.homepage     = "https://github.com/JuanjoArreola/SwiftUtils"

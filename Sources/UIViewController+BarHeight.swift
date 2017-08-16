@@ -22,6 +22,7 @@ public extension UIViewController {
     }
     
     var tabBarHeight: CGFloat {
+        if tabBarController?.tabBar.isHidden ?? true { return 0 }
         return tabBarController?.tabBar.bounds.size.height ?? 0
     }
 }

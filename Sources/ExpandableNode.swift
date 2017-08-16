@@ -100,6 +100,8 @@ open class NodeContainer: DynamicNode, Sequence {
     public var identifier: String!
     public weak var parent: Node?
     
+    public init() {}
+    
     public var count: Int {
         if !active { return 0 }
         var total = 0
@@ -113,7 +115,7 @@ open class NodeContainer: DynamicNode, Sequence {
         return total
     }
     
-    func indexOf(_ node: Node) -> Int? {
+    public func index(of node: Node) -> Int? {
         var total = 0
         for cell in children {
             if cell === node {

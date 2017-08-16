@@ -102,7 +102,7 @@ public class LocationManager: NSObject, CLLocationManagerDelegate {
         return alert
     }
     
-    public func completeWithLastLocation() {
+    @objc public func completeWithLastLocation() {
         guard let completion = completion else { return }
         completion(lastLocation ?? defaultLocation)
         self.completion = nil

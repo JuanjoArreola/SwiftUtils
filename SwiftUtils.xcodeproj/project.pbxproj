@@ -27,6 +27,7 @@
 		811D22371E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22221E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift */; };
 		811D22391E4CDAD400DEC16A /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */; };
 		811D223A1E4CDAD400DEC16A /* UIViewController+BarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */; };
+		815AFF241F44B4D20096BA31 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815AFF231F44B4D20096BA31 /* UIView+Util.swift */; };
 		817DAFEC1EC503890031918C /* Notification+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817DAFEB1EC503890031918C /* Notification+Util.swift */; };
 		817E74751E4A46D3008A088D /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 817E74731E4A46D3008A088D /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		811D22221E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableViewController+SectionHeight.swift"; path = "Sources/UITableViewController+SectionHeight.swift"; sourceTree = SOURCE_ROOT; };
 		811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alert.swift"; path = "Sources/UIViewController+Alert.swift"; sourceTree = SOURCE_ROOT; };
 		811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+BarHeight.swift"; path = "Sources/UIViewController+BarHeight.swift"; sourceTree = SOURCE_ROOT; };
+		815AFF231F44B4D20096BA31 /* UIView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
 		817DAFEB1EC503890031918C /* Notification+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notification+Util.swift"; path = "Sources/Notification+Util.swift"; sourceTree = SOURCE_ROOT; };
 		817E74701E4A46D3008A088D /* SwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		817E74731E4A46D3008A088D /* SwiftUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUtils.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */,
 				811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */,
 				817DAFEB1EC503890031918C /* Notification+Util.swift */,
+				815AFF231F44B4D20096BA31 /* UIView+Util.swift */,
 			);
 			path = SwiftUtils;
 			sourceTree = "<group>";
@@ -153,13 +156,13 @@
 		817E74671E4A46D3008A088D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Juanjo;
 				TargetAttributes = {
 					817E746F1E4A46D3008A088D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = EH5NJV9XC8;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -206,6 +209,7 @@
 				811D222B1E4CDAD400DEC16A /* ExpandableNode.swift in Sources */,
 				811D22331E4CDAD400DEC16A /* String+Localization.swift in Sources */,
 				811D22371E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift in Sources */,
+				815AFF241F44B4D20096BA31 /* UIView+Util.swift in Sources */,
 				811D22321E4CDAD400DEC16A /* String+Email.swift in Sources */,
 				811D22311E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift in Sources */,
 				817DAFEC1EC503890031918C /* Notification+Util.swift in Sources */,
@@ -232,7 +236,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -240,7 +246,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -285,7 +295,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -293,7 +305,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -340,7 +356,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -361,7 +378,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.juanjo.SwiftUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

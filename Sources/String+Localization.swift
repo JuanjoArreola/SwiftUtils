@@ -25,7 +25,6 @@ public extension String {
         let string = NSLocalizedString(self, comment: "")
         let components = string.components(separatedBy: "%@")
         if components.count - 1 != arguments.count || components.isEmpty {
-            Log.error("The number of arguments doesn't match the number of placeholders in \(string)")
             return NSAttributedString(string: string)
         }
         let result = NSMutableAttributedString(string: components[0], attributes: attributes)

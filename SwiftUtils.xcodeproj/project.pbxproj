@@ -16,7 +16,6 @@
 		811D222C1E4CDAD400DEC16A /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22171E4CDAD400DEC16A /* FormController.swift */; };
 		811D222D1E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22181E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift */; };
 		811D222E1E4CDAD400DEC16A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22191E4CDAD400DEC16A /* LocationManager.swift */; };
-		811D222F1E4CDAD400DEC16A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D221A1E4CDAD400DEC16A /* Log.swift */; };
 		811D22301E4CDAD400DEC16A /* ManagedObjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D221B1E4CDAD400DEC16A /* ManagedObjectRepository.swift */; };
 		811D22311E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D221C1E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift */; };
 		811D22321E4CDAD400DEC16A /* String+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D221D1E4CDAD400DEC16A /* String+Email.swift */; };
@@ -42,7 +41,6 @@
 		811D22171E4CDAD400DEC16A /* FormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormController.swift; path = Sources/FormController.swift; sourceTree = SOURCE_ROOT; };
 		811D22181E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalHeaderCollectionFlowLayout.swift; path = Sources/HorizontalHeaderCollectionFlowLayout.swift; sourceTree = SOURCE_ROOT; };
 		811D22191E4CDAD400DEC16A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Sources/LocationManager.swift; sourceTree = SOURCE_ROOT; };
-		811D221A1E4CDAD400DEC16A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/Log.swift; sourceTree = SOURCE_ROOT; };
 		811D221B1E4CDAD400DEC16A /* ManagedObjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManagedObjectRepository.swift; path = Sources/ManagedObjectRepository.swift; sourceTree = SOURCE_ROOT; };
 		811D221C1E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDecimalNumber+ArithmeticOperators.swift"; path = "Sources/NSDecimalNumber+ArithmeticOperators.swift"; sourceTree = SOURCE_ROOT; };
 		811D221D1E4CDAD400DEC16A /* String+Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Email.swift"; path = "Sources/String+Email.swift"; sourceTree = SOURCE_ROOT; };
@@ -101,7 +99,6 @@
 				811D22171E4CDAD400DEC16A /* FormController.swift */,
 				811D22181E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift */,
 				811D22191E4CDAD400DEC16A /* LocationManager.swift */,
-				811D221A1E4CDAD400DEC16A /* Log.swift */,
 				811D221B1E4CDAD400DEC16A /* ManagedObjectRepository.swift */,
 				811D221C1E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift */,
 				811D221D1E4CDAD400DEC16A /* String+Email.swift */,
@@ -202,7 +199,6 @@
 				811D22271E4CDAD400DEC16A /* CGPoint+ArithmeticOperators.swift in Sources */,
 				811D22361E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift in Sources */,
 				811D222C1E4CDAD400DEC16A /* FormController.swift in Sources */,
-				811D222F1E4CDAD400DEC16A /* Log.swift in Sources */,
 				811D222D1E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift in Sources */,
 				811D223A1E4CDAD400DEC16A /* UIViewController+BarHeight.swift in Sources */,
 				811D22341E4CDAD400DEC16A /* String+Range.swift in Sources */,

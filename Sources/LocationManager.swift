@@ -77,7 +77,6 @@ public class LocationManager: NSObject, CLLocationManagerDelegate {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
-            Log.debug("Location restricted, using default")
             completeWithLastLocation()
         case .denied:
             if shouldAskLocationAuthorization {
@@ -113,19 +112,15 @@ public class LocationManager: NSObject, CLLocationManagerDelegate {
     // MARK: - CLLocationManagerDelegate
     
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        Log.debug("Location authorization status changed")
         switch status {
         case .authorizedWhenInUse, .authorizedAlways:
             locationManager.startUpdatingLocation()
             timer?.invalidate()
             timer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.completeWithLastLocation), userInfo: nil, repeats: false)
-        case .notDetermined:
-            Log.warn("Location not determined")
         default:
             locationManager.stopUpdatingLocation()
             completion?(lastLocation ?? defaultLocation)
             completion = nil
-            Log.debug("Location unavailable, using default")
         }
     }
     

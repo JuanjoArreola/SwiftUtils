@@ -12,6 +12,6 @@ let emailRegex = try! NSRegularExpression(pattern: "\\A.+@.+\\.[A-Za-z0-9]{2,}\\
 
 public extension String {
     var isPossibleEmail: Bool {
-        return emailRegex.numberOfMatches(in: self, options: [], range: NSMakeRange(0, self.characters.count)) > 0
+        return emailRegex.numberOfMatches(in: self, options: [], range: NSMakeRange(0, count)) > 0
     }
 }

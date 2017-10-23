@@ -15,8 +15,8 @@ public protocol FormController: UITextFieldDelegate {
     var placeholderHighlightColor: UIColor { get }
     var errorColor: UIColor { get }
     
-    func goAction(_ sender: AnyObject)
-    func sendAction(_ sender: AnyObject)
+    func goAction(_ sender: Any)
+    func sendAction(_ sender: Any)
     func highlightEmptyTextFields(_ highlight: Bool)
     func higlightIncorrectTextFields(_ errorTextFields: [UITextField])
     func formTextFieldShouldReturn(_ textField: UITextField) -> Bool
@@ -75,7 +75,7 @@ public extension FormController {
         errorTextFields.forEach { $0.textColor = errorColor }
     }
     
-    func goAction(_ sender: AnyObject) {}
+    func goAction(_ sender: Any) {}
     
-    func sendAction(_ sender: AnyObject) {}
+    func sendAction(_ sender: Any) {}
 }

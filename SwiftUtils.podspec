@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/JuanjoArreola/SwiftUtils.git", :tag => "{s.version}" }
+  s.source       = { :git => "https://github.com/JuanjoArreola/SwiftUtils.git", :tag => "#{s.version}" }
   s.source_files  = "Sources/**/*.swift"
 
   # s.public_header_files = "Classes/**/*.h"

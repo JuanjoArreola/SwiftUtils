@@ -8,14 +8,17 @@
 
 import Foundation
 
-public func dispatch_after(seconds: Double, queue: DispatchQueue, closure: @escaping () -> Void) {
-    queue.asyncAfter(deadline: DispatchTime.now() + Double(Int64(seconds * 1000) * Int64(NSEC_PER_MSEC)) / Double(NSEC_PER_SEC), execute: closure)
-}
-
-public func dispatch_after(milliseconds: Int64, queue: DispatchQueue, closure: @escaping () -> Void) {
-    queue.asyncAfter(deadline: DispatchTime.now() + Double(milliseconds * Int64(NSEC_PER_MSEC)) / Double(NSEC_PER_SEC), execute: closure)
-}
-
-public func dispatch_after(nanoseconds: Int64, queue: DispatchQueue, closure: @escaping () -> Void) {
-    queue.asyncAfter(deadline: DispatchTime.now() + Double(nanoseconds) / Double(NSEC_PER_SEC), execute: closure)
+public extension DispatchQueue {
+    
+    public func asyncAfter(seconds: Double, closure: @escaping () -> Void) {
+        asyncAfter(deadline: DispatchTime.now() + Double(Int64(seconds * 1000) * Int64(NSEC_PER_MSEC)) / Double(NSEC_PER_SEC), execute: closure)
+    }
+    
+    public func asyncAfter(milliseconds: Int64, queue: DispatchQueue, closure: @escaping () -> Void) {
+        asyncAfter(deadline: DispatchTime.now() + Double(milliseconds * Int64(NSEC_PER_MSEC)) / Double(NSEC_PER_SEC), execute: closure)
+    }
+    
+    public func asyncAfter(nanoseconds: Int64, queue: DispatchQueue, closure: @escaping () -> Void) {
+        asyncAfter(deadline: DispatchTime.now() + Double(nanoseconds) / Double(NSEC_PER_SEC), execute: closure)
+    }
 }

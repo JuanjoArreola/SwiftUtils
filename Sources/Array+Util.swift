@@ -8,17 +8,6 @@
 
 import Foundation
 
-public extension Array {
-    func find(_ criteria: (_ element: Element) -> Bool) -> Element? {
-        for element in self {
-            if criteria(element) {
-                return element
-            }
-        }
-        return nil
-    }
-}
-
 public extension Array where Element: Equatable {
     
     mutating func removeElement(_ element: Element) -> Element? {

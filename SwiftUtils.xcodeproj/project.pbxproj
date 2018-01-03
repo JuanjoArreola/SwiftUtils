@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810EAAA91FF300E10008E57B /* ButtonSelectGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810EAAA81FF300E10008E57B /* ButtonSelectGroup.swift */; };
+		810EAAAB1FF301750008E57B /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810EAAAA1FF301750008E57B /* Selectable.swift */; };
+		810EAAAD1FF302220008E57B /* UIButton+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810EAAAC1FF302220008E57B /* UIButton+Spacing.swift */; };
+		810EAAAF1FF302A20008E57B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810EAAAE1FF302A20008E57B /* ImagePicker.swift */; };
 		811D22261E4CDAD400DEC16A /* Array+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22111E4CDAD400DEC16A /* Array+Util.swift */; };
 		811D22271E4CDAD400DEC16A /* CGPoint+ArithmeticOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22121E4CDAD400DEC16A /* CGPoint+ArithmeticOperators.swift */; };
 		811D22281E4CDAD400DEC16A /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D22131E4CDAD400DEC16A /* DataStack.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810EAAA81FF300E10008E57B /* ButtonSelectGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonSelectGroup.swift; path = Sources/ButtonSelectGroup.swift; sourceTree = SOURCE_ROOT; };
+		810EAAAA1FF301750008E57B /* Selectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Selectable.swift; path = Sources/Selectable.swift; sourceTree = SOURCE_ROOT; };
+		810EAAAC1FF302220008E57B /* UIButton+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIButton+Spacing.swift"; path = "Sources/UIButton+Spacing.swift"; sourceTree = SOURCE_ROOT; };
+		810EAAAE1FF302A20008E57B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = Sources/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
 		811D22111E4CDAD400DEC16A /* Array+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Util.swift"; path = "Sources/Array+Util.swift"; sourceTree = SOURCE_ROOT; };
 		811D22121E4CDAD400DEC16A /* CGPoint+ArithmeticOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGPoint+ArithmeticOperators.swift"; path = "Sources/CGPoint+ArithmeticOperators.swift"; sourceTree = SOURCE_ROOT; };
 		811D22131E4CDAD400DEC16A /* DataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStack.swift; path = Sources/DataStack.swift; sourceTree = SOURCE_ROOT; };
@@ -88,9 +96,8 @@
 		817E74721E4A46D3008A088D /* SwiftUtils */ = {
 			isa = PBXGroup;
 			children = (
-				817E74731E4A46D3008A088D /* SwiftUtils.h */,
-				817E74741E4A46D3008A088D /* Info.plist */,
 				811D22111E4CDAD400DEC16A /* Array+Util.swift */,
+				810EAAA81FF300E10008E57B /* ButtonSelectGroup.swift */,
 				811D22121E4CDAD400DEC16A /* CGPoint+ArithmeticOperators.swift */,
 				811D22131E4CDAD400DEC16A /* DataStack.swift */,
 				811D22141E4CDAD400DEC16A /* DeselectRowTableViewController.swift */,
@@ -98,19 +105,24 @@
 				811D22161E4CDAD400DEC16A /* ExpandableNode.swift */,
 				811D22171E4CDAD400DEC16A /* FormController.swift */,
 				811D22181E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift */,
+				810EAAAE1FF302A20008E57B /* ImagePicker.swift */,
+				817E74741E4A46D3008A088D /* Info.plist */,
 				811D22191E4CDAD400DEC16A /* LocationManager.swift */,
 				811D221B1E4CDAD400DEC16A /* ManagedObjectRepository.swift */,
+				817DAFEB1EC503890031918C /* Notification+Util.swift */,
 				811D221C1E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift */,
+				810EAAAA1FF301750008E57B /* Selectable.swift */,
 				811D221D1E4CDAD400DEC16A /* String+Email.swift */,
 				811D221E1E4CDAD400DEC16A /* String+Localization.swift */,
 				811D221F1E4CDAD400DEC16A /* String+Range.swift */,
+				817E74731E4A46D3008A088D /* SwiftUtils.h */,
 				811D22201E4CDAD400DEC16A /* TimeMeasure.swift */,
+				810EAAAC1FF302220008E57B /* UIButton+Spacing.swift */,
 				811D22211E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift */,
 				811D22221E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift */,
+				815AFF231F44B4D20096BA31 /* UIView+Util.swift */,
 				811D22241E4CDAD400DEC16A /* UIViewController+Alert.swift */,
 				811D22251E4CDAD400DEC16A /* UIViewController+BarHeight.swift */,
-				817DAFEB1EC503890031918C /* Notification+Util.swift */,
-				815AFF231F44B4D20096BA31 /* UIView+Util.swift */,
 			);
 			path = SwiftUtils;
 			sourceTree = "<group>";
@@ -198,7 +210,9 @@
 			files = (
 				811D22271E4CDAD400DEC16A /* CGPoint+ArithmeticOperators.swift in Sources */,
 				811D22361E4CDAD400DEC16A /* UITableViewCell+HideSeparator.swift in Sources */,
+				810EAAAF1FF302A20008E57B /* ImagePicker.swift in Sources */,
 				811D222C1E4CDAD400DEC16A /* FormController.swift in Sources */,
+				810EAAA91FF300E10008E57B /* ButtonSelectGroup.swift in Sources */,
 				811D222D1E4CDAD400DEC16A /* HorizontalHeaderCollectionFlowLayout.swift in Sources */,
 				811D223A1E4CDAD400DEC16A /* UIViewController+BarHeight.swift in Sources */,
 				811D22341E4CDAD400DEC16A /* String+Range.swift in Sources */,
@@ -206,9 +220,11 @@
 				811D22331E4CDAD400DEC16A /* String+Localization.swift in Sources */,
 				811D22371E4CDAD400DEC16A /* UITableViewController+SectionHeight.swift in Sources */,
 				815AFF241F44B4D20096BA31 /* UIView+Util.swift in Sources */,
+				810EAAAD1FF302220008E57B /* UIButton+Spacing.swift in Sources */,
 				811D22321E4CDAD400DEC16A /* String+Email.swift in Sources */,
 				811D22311E4CDAD400DEC16A /* NSDecimalNumber+ArithmeticOperators.swift in Sources */,
 				817DAFEC1EC503890031918C /* Notification+Util.swift in Sources */,
+				810EAAAB1FF301750008E57B /* Selectable.swift in Sources */,
 				811D22261E4CDAD400DEC16A /* Array+Util.swift in Sources */,
 				811D22301E4CDAD400DEC16A /* ManagedObjectRepository.swift in Sources */,
 				811D22281E4CDAD400DEC16A /* DataStack.swift in Sources */,

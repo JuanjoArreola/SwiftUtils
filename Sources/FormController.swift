@@ -35,33 +35,22 @@ public extension FormController {
     }
     
     func formTextFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let textFields = self.textFields.sorted(by: { $0.tag < $1.tag })
         if textField.returnKeyType == .done || textField.returnKeyType == .default {
-            DispatchQueue.main.async(execute: {
-                textField.resignFirstResponder()
-            })
+            DispatchQueue.main.async { textField.resignFirstResponder() }
         } else if textField.returnKeyType == .go {
             goAction(textField)
-            DispatchQueue.main.async(execute: {
-                textField.resignFirstResponder()
-            })
+            DispatchQueue.main.async { textField.resignFirstResponder() }
             return false
         } else if textField.returnKeyType == .send {
             sendAction(textField)
-            DispatchQueue.main.async(execute: {
-                textField.resignFirstResponder()
-            })
+            DispatchQueue.main.async { textField.resignFirstResponder() }
             return false
         } else if textField.returnKeyType != .next {
             return true
         }
-        guard let start = textFields.index(where: { $0 == textField })?.advanced(by: 1) else {
-            return true
-        }
-        for field in textFields.suffix(from: start) {
-            if field.isEnabled {
-                field.becomeFirstResponder()
-                break
-            }
+        if let start = textFields.index(where: { $0 == textField })?.advanced(by: 1) {
+            textFields.suffix(from: start).first(where: { $0.isEnabled })?.becomeFirstResponder()
         }
         return true
     }

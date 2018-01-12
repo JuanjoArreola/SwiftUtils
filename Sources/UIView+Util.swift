@@ -18,3 +18,25 @@ public extension UIView {
         }
     }
 }
+
+public extension UIView {
+    
+    @available(iOS 9.0, *)
+    func center(_ view: UIView, between topView: UIView, and bottomView: UIView) {
+        center(view, between: topView, and: bottomView.topAnchor)
+    }
+    
+    @available(iOS 9.0, *)
+    func center(_ view: UIView, between topView: UIView, and bottomAnchor: NSLayoutYAxisAnchor) {
+        let top = UILayoutGuide()
+        let bottom = UILayoutGuide()
+        addLayoutGuide(top)
+        addLayoutGuide(bottom)
+        
+        top.topAnchor.constraint(equalTo: topView.bottomAnchor).isActive = true
+        top.bottomAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        bottom.topAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        bottom.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        top.heightAnchor.constraint(equalTo: bottom.heightAnchor).isActive = true
+    }
+}

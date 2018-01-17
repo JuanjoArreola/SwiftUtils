@@ -40,3 +40,14 @@ public extension UIView {
         top.heightAnchor.constraint(equalTo: bottom.heightAnchor).isActive = true
     }
 }
+
+public extension UIView {
+    
+    class func fromNib(_ name: String) -> Self? {
+        return fromNib(name: name, type: self)
+    }
+    
+    private class func fromNib<T: UIView>(name: String, type: T.Type) -> T? {
+        return Bundle.main.loadNibNamed(name, owner: nil, options: nil)?[0] as? T
+    }
+}

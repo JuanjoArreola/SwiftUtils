@@ -17,8 +17,8 @@ public struct ButtonSelectGroup<T: Equatable> {
         buttons[button] = value
     }
     
-    public func didSelect(button: UIButton) {
-        button.isSelected = !button.isSelected
+    public func didSelect(button: UIButton?) {
+        button?.isSelected = true
         buttons.keys.forEach({ if $0 != button { $0.isSelected = false } })
     }
     

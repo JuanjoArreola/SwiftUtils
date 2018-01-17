@@ -25,4 +25,20 @@ public extension UIViewController {
         if tabBarController?.tabBar.isHidden ?? true { return 0 }
         return tabBarController?.tabBar.bounds.size.height ?? 0
     }
+    
+    var safeAreaTopHeight: CGFloat {
+        return navigationController?.navigationBar.subviews[0].bounds.height ?? 0
+    }
+    
+    var safeAreaBottomHeight: CGFloat {
+        if #available(iOS 11.0, *) {
+            return view.safeAreaInsets.bottom
+        } else {
+            return 0
+        }
+    }
+    
+    var safeAreaHeight: CGFloat {
+        return safeAreaTopHeight + safeAreaBottomHeight
+    }
 }

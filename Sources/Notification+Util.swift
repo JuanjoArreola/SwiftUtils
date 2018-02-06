@@ -20,11 +20,11 @@ public extension Notification {
 
 public extension Notification.Name {
     
-    func post(userInfo: [AnyHashable: Any]? = nil) {
-        NotificationCenter.default.post(name: self, object: nil, userInfo: userInfo)
+    func post(object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {
+        NotificationCenter.default.post(name: self, object: object, userInfo: userInfo)
     }
     
-    func observe(_ closure: @escaping (Notification) -> Void) -> NSObjectProtocol {
-        return NotificationCenter.default.addObserver(forName: self, object: nil, queue: nil, using: closure)
+    func observe(object: Any? = nil, _ closure: @escaping (Notification) -> Void) -> NSObjectProtocol {
+        return NotificationCenter.default.addObserver(forName: self, object: object, queue: nil, using: closure)
     }
 }

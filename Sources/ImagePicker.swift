@@ -37,7 +37,7 @@ public class ImagePicker {
         controller?.present(alert, animated: true, completion: nil)
     }
     
-    func requestImage(from sourceType: UIImagePickerControllerSourceType) {
+    public func requestImage(from sourceType: UIImagePickerControllerSourceType) {
         let picker = UIImagePickerController()
         picker.delegate = delegate
         picker.allowsEditing = true
@@ -45,7 +45,7 @@ public class ImagePicker {
         controller?.present(picker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         controller?.dismiss(animated: true, completion: nil)
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageHandler?(image)

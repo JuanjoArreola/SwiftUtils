@@ -11,7 +11,7 @@ import Foundation
 public protocol Node: class {
     var count: Int { get }
     var identifier: String! { get }
-    weak var parent: Node? { get set }
+    var parent: Node? { get set }
 }
 
 public protocol StaticNode: Node { }

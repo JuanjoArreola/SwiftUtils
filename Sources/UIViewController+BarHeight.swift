@@ -27,7 +27,12 @@ public extension UIViewController {
     }
     
     var safeAreaTopHeight: CGFloat {
-        return navigationController?.navigationBar.subviews[0].bounds.height ?? 0
+        let height = navigationController?.navigationBar.subviews[0].bounds.height
+        if #available(iOS 11.0, *) {
+            return height ?? view.safeAreaInsets.top
+        } else {
+            return height ?? 0
+        }
     }
     
     var safeAreaBottomHeight: CGFloat {

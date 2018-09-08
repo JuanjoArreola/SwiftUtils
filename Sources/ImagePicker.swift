@@ -9,7 +9,7 @@
 import UIKit
 
 public class ImagePicker {
-    var imageHandler: ((UIImage) -> Void)?
+    public var imageHandler: ((UIImage) -> Void)?
     weak var controller: UIViewController?
     weak var delegate: (UIImagePickerControllerDelegate & UINavigationControllerDelegate)?
     

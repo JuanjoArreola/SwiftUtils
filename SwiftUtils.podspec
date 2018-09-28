@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftUtils"
-  s.version      = "1.4.6"
+  s.version      = "1.5.0"
   s.summary      = "A collection of utilities for iOS projects"
 
   s.homepage     = "https://github.com/JuanjoArreola/SwiftUtils"
@@ -17,5 +17,6 @@ Pod::Spec.new do |s|
 
   s.frameworks = "UIKit", "CoreData", "CoreLocation"
   s.requires_arc = true
+  s.swift_version = "4.2"
 
 end

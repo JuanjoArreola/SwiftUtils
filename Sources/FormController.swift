@@ -57,7 +57,7 @@ public extension FormController {
     
     func highlightEmptyTextFields(_ highlight: Bool) {
         let color = highlight ? placeholderHighlightColor : placeholderColor
-        textFields.forEach({ $0.attributedPlaceholder = NSAttributedString(string: $0.placeholder ?? "", attributes: [NSAttributedStringKey.foregroundColor: color])})
+        textFields.forEach({ $0.attributedPlaceholder = NSAttributedString(string: $0.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor: color])})
     }
     
     func higlightIncorrectTextFields(_ errorTextFields: [UITextField]) {

@@ -21,7 +21,7 @@ public extension String {
         return String(format: NSLocalizedString(self, comment: ""), arguments: arguments)
     }
     
-    func localized(attributes: [NSAttributedStringKey: Any]?, arguments: [NSAttributedString]) -> NSAttributedString {
+    func localized(attributes: [NSAttributedString.Key: Any]?, arguments: [NSAttributedString]) -> NSAttributedString {
         let string = NSLocalizedString(self, comment: "")
         let components = string.components(separatedBy: "%@")
         if components.count - 1 != arguments.count || components.isEmpty {

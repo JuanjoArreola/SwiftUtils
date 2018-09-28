@@ -10,11 +10,11 @@ import Foundation
 
 public extension Notification {
     var keyboardAnimationDuration: Double? {
-        return userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? Double
+        return userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double
     }
     
     var keyboardFrameEnd: CGRect? {
-        return (userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+        return (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
     }
 }
 

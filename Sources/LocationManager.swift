@@ -93,7 +93,7 @@ public class LocationManager: NSObject, CLLocationManagerDelegate {
     private func getSettingsAlert() -> UIAlertController {
         let alert = UIAlertController(title: "Plaese enable location".localized, message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Settings".localizedWithComment("Go to settings"), style: .default) { _ in
-            if let url = URL(string: UIApplicationOpenSettingsURLString) {
+            if let url = URL(string: UIApplication.openSettingsURLString) {
                 UIApplication.shared.openURL(url)
             }
         })

@@ -45,9 +45,9 @@ public class ImagePicker {
         controller?.present(picker, animated: true, completion: nil)
     }
     
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         controller?.dismiss(animated: true, completion: nil)
-        if let image = info[UIImagePickerController.InfoKey.editedImage.rawValue] as? UIImage {
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             imageHandler?(image)
             imageHandler = nil
         }
